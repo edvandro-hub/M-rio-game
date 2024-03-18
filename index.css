@@ -1,0 +1,77 @@
+
+
+.game-board_mario {
+    width: 100%;
+    height: 500px;
+    border-bottom:  13244px solid #3ab15b;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    background: linear-gradient(#1ebec6, #eef8f8);
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+/* Adicionei uma altura como exemplo */
+    
+  animation: pipe-animation 1s infinite linear;
+    z-index: 1;
+   
+  
+}
+
+.mario{
+position: absolute;
+width: 120px;
+bottom:00px;
+z-index: 0;
+
+
+}
+
+
+
+.jump{
+
+animation: jump 500ms ease-out;
+
+}
+
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%; /* Ajuste a posição final conforme necessário */
+    }
+}
+
+@keyframes jump{
+
+    0%{
+        bottom: 90px;;
+    }
+
+    40%{
+        bottom: 180px;
+    }
+    50%{
+        bottom: 180px;
+    }
+
+
+    60%{
+        bottom: 180px;
+    }
+
+
+    100%{
+
+        bottom: 0;
+    }
+
+}
